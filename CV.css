@@ -1,0 +1,333 @@
+/*police*/
+@font-face 
+{
+    font-family: 'didact_gothicregular';
+    src: url('didactgothic-regular-webfont.eot');
+    src: url('didactgothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('didactgothic-regular-webfont.woff') format('woff'),
+         url('didactgothic-regular-webfont.ttf') format('truetype'),
+         url('didactgothic-regular-webfont.svg#didact_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*structure générale*/
+Html 
+{
+	font-size: 100%;
+}
+body
+{
+	box-shadow: 1px 1px 10px #555;
+    margin: auto;
+    max-width: 1100px;
+	display: flex;
+	flex-direction: column;
+  	width: 100%;
+	font-family: 'didact_gothicregular', Arial, serif;
+}
+
+/*photo + nom prénom job*/
+body>header
+{
+	display: flex;
+	width: auto;
+	flex-direction: row;
+}
+/*photo*/
+body>header>aside
+{
+	display: flex;
+	background-color: #3bb3e0;	
+	width: 30%;
+	justify-content: center;
+}
+img 
+{
+	margin: 25px;
+	width: 40%;
+	background-color: rgba(117,117,117,1);
+	box-shadow: 1px 1px 12px #555;
+	border-radius: 50%;
+}
+/*nom prénom job*/
+body>header>section
+{
+	width: 70%;	
+	padding-right: 25px;
+	margin: 2em 0 0 0;
+}
+.prenom
+{
+    color: #3bb3e0;
+}
+.dev
+{
+	text-decoration: underline #3bb3e0;	
+}
+/*côté fond bleu + parcours*/
+main 
+{
+  	display: flex;
+	flex-direction: row;
+  	width: 100%;
+}
+
+/*côté fond bleu + son contenu*/
+main>aside
+{
+	display: flex;
+	background-color: #3bb3e0;
+	width: 30%;
+	flex-direction: column;
+}
+main>aside header
+{
+	background-color: black;
+	color: #3bb3e0;
+	display: flex;
+	justify-content: center;
+	font-size: 1.2em;
+	margin: 0;
+}
+#a_propos
+{
+	flex: 3;
+}
+.a_propos
+{
+	text-align: justify;
+	margin: 35px;
+}
+.loisirs
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 10%;
+}
+/*entourage icônes côté fond bleu*/
+.loisir
+ {
+	display: flex;
+	border: 2px solid black;
+	border-radius: 50px;
+	width: 3em;
+    height: 3em;	
+	justify-content: center;
+	align-items: center;	
+	color: black;
+}
+
+/*bloc droite + son contenu*/
+#parcours
+{
+	display: flex;
+	flex-direction: column;
+	width: 70%;	
+	padding: 0 25px 25px 0;
+}
+/*3 blocs formation experience et recommandations*/
+#parcours article 
+{
+	display: flex;
+	flex-direction: column;
+}
+/*sous-article des blocs formation experience et recommandations*/
+.formation, .experience, .recommandation
+{
+	display: flex;
+	flex-direction: row;
+}
+/*puce + date + lieu - côté gauche des sous articles formation et experience*/
+#parcours aside
+{
+	padding: 0 0 0 25px;
+	color: black;
+	display: flex;
+	width: 35%;
+	margin: 0;
+	color: black;
+	font-size: 1em;
+	display: flex;
+	justify-content: flex-start;
+	font-weight: bold;
+}
+/*date + lieu - côté gauche des sous articles formation et experience*/
+.dl
+{
+	display: flex;
+	flex-direction: column;
+	font-size: 1em;	
+}
+/*côté droit des sous articles formation et experience*/
+.infos
+{
+	display: flex;		
+	text-align: justify;
+	flex-direction: column;
+	width: 65%;
+}
+#parcours p
+{
+	margin: 1em 0 2em 0;
+}
+/*contenu du bloc recommandations*/
+.recommandation
+	{	
+		display: flex;
+		flex-wrap: wrap;
+	}
+.recommandation1, .recommandation2
+{
+	width: 50%;
+	font-weight: bold;
+	margin-left: 25px;
+}
+
+/*---divers---*/
+H1
+{
+	color: Black;
+	font-size: 3em;
+	font-weight: lighter;
+	margin: 15px 0px 15px 25px;
+}
+H2
+{
+	color: Black;
+	font-size: 2.5em;
+	font-weight: lighter;
+	margin: 15px 0 25px 25px;
+}
+H3
+{
+	margin: 5px 0 5px 0;
+}
+H4
+{
+	color: black;
+	font-weight: bold;
+	border-bottom : 1px solid #3bb3e0;	
+	margin: 0 0 15px 25px;
+	width : 80%;
+	font-size: 1.2em;
+}
+H5
+{
+	font-weight: bold;
+	font-size: 1em;
+	margin: 0 0 1.2em 0;
+}
+#contact p
+{
+	text-align: left;
+	font-size: 1em;	
+	margin-left: 35px;
+	font-weight: bold;
+}
+/*---icônes---*/
+i
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	color: #3bb3e0;
+}
+/*icônes côté bleu*/
+.loisirs i
+{
+	color: black;
+}
+/*icônes parcours*/
+#parcours i
+{
+	margin: 0 0.5em 0 0;
+}
+
+/*liens hypertextes*/
+a
+{
+	text-decoration: none;
+	color: black;
+	font-size: 1em;
+	flex-wrap: nowrap;
+}
+a:hover
+{
+	color:blue;
+}
+
+/*---responsive---*/
+@media (max-width: 768px)
+{
+	/*structure générale*/
+	body
+	{
+		box-shadow: 1px 1px 10px #555;
+		margin: auto;
+		max-width: 510px;
+		width: 100%;
+		display: flex;
+		flex-flow: column wrap;
+		font-size: 75%;		
+		font-family: 'didact_gothicregular', Arial, serif;
+	}
+	/*photo + nom prénom job*/
+	body>header
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	/*photo*/
+	body header aside
+	{
+		display: flex;
+		order: 0;
+		min-width: 100%;
+	}
+	/*nom prénom job*/
+	body header section
+	{
+		display: flex;
+		flex-wrap: wrap;
+		order: 1;
+		width: 100%;
+		justify-content: center;
+		margin: 2em 0 0 0;
+		padding-right: 0;
+	}
+	/*côté fond bleu + parcours*/
+	main 
+	{
+		display: flex;
+		flex-direction: column;	
+	}
+	/*côté fond bleu + son contenu*/
+	main>aside
+	{
+		display: flex;
+		min-width: 100%;
+		order: 3;
+	}
+	/*bloc droite + son contenu*/
+	#parcours
+	{
+		display: flex;
+		min-width: 90%;
+		order: 2;
+		margin: 0.2em 0 0 0.2em;
+	}
+	/*bloc recommandations*/
+	.recommandation
+	{
+		display: flex;
+		padding-bottom: 2em;
+		margin-top: 0.5em;
+	}
+	/*contenu du bloc recommandations*/
+	.recommandation1, .recommandation2
+	{	
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
